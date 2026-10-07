@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio of a passionate Fresher Software Engineer specializing in Full-Stack Development, Problem Solving, and Modern Web Applications." />
+  <meta name="keywords"
+    content="Software Engineer, Fresher Portfolio, Full Stack Developer, Web Development, JavaScript, React, Python, Java" />
+  <meta name="author" content="Pallavi K R" />
+  <title>Ramya | Fresher Software Engineer Portfolio</title>
+
+  <!-- Google Fonts: Modern sans-serif + Retro Pixel accent -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Press+Start+2P&family=Fira+Code:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Background Wallpaper with Overlay -->
+  <div class="bg-wallpaper" id="bgWallpaper" aria-hidden="true"></div>
+  <div class="bg-overlay" aria-hidden="true"></div>
+
+  <!-- Mobile Top Bar with Hamburger & Theme Toggle -->
+  <header class="mobile-header" id="mobileHeader">
+    <div class="mobile-brand">
+      <span class="pixel-brand-icon">👾</span>
+      <span class="mobile-brand-name">Pallavi.dev</span>
+    </div>
+    <div class="mobile-actions">
+      <!-- Theme toggle for mobile -->
+      <button class="theme-toggle-btn" id="mobileThemeToggle" aria-label="Toggle dark and light mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <!-- Hamburger button -->
+      <button class="menu-toggle-btn" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Layout Wrapper -->
+  <div class="portfolio-container">
+
+    <!-- 3. Vertical Navigation Bar (Left Side) -->
+    <aside class="sidebar-nav" id="sidebarNav" aria-label="Main Navigation">
+      <div class="sidebar-header">
+        <a href="resume.pdf" target="_blank" class="pixel-avatar-frame" title="Click to view Ramya's Resume PDF">
+          <img src="profile photo.jpeg" alt="Ramya Ramesh Profile Avatar" class="sidebar-avatar"
+            onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80'" />
+          <span class="status-indicator" title="Available for hire"></span>
+        </a>
+        <h2 class="sidebar-name">Ramya </h2>
+        <p class="sidebar-role">Software Engineer| Java developer</p>
+        <div class="pixel-badge">ASPIRING SOFTWARE ENGINEER</div>
+      </div>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active" data-section="hero">
+              <i class="fa-solid fa-house-chimney"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-section="about">
+              <i class="fa-solid fa-user-astronaut"></i>
+              <span>About Me</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" data-section="skills">
+              <i class="fa-solid fa-code"></i>
+              <span>Skills</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#timeline" class="nav-link" data-section="timeline">
+              <i class="fa-solid fa-timeline"></i>
+              <span>Timeline</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link" data-section="projects">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#video-intro" class="nav-link" data-section="video-intro">
+              <i class="fa-solid fa-circle-play"></i>
+              <span>Video Intro</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link" data-section="testimonials">
+              <i class="fa-solid fa-comments"></i>
+              <span>Testimonials</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#chat" class="nav-link" data-section="chat">
+              <i class="fa-solid fa-robot"></i>
+              <span>AI Chat</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-section="contact">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Footer: Night Mode Toggle & Resume CTA -->
+      <div class="sidebar-footer">
+        <div class="theme-switch-wrapper">
+          <span class="theme-label"><i class="fa-solid fa-circle-half-stroke"></i> Theme</span>
+          <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+            <span class="theme-mode-text">Dark</span>
+          </button>
+        </div>
+        <a href="resume.pdf" target="_blank" class="resume-btn" download>
+          <i class="fa-solid fa-download"></i>
+          <span>Resume PDF</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content" id="mainContent">
+
+      <!-- ==============================================
+           1 & 2. HERO SECTION
+           ============================================== -->
+      <section id="hero" class="content-section hero-section">
+        <div class="hero-card glass-panel">
+          <div class="pixel-corner tl"></div>
+          <div class="pixel-corner tr"></div>
+          <div class="pixel-corner bl"></div>
+          <div class="pixel-corner br"></div>
+
+          <div class="hero-content">
+            <div class="hero-tag">
+              <span class="pulse-dot"></span>
+              <span>Available for Full-time Roles & Internships</span>
+            </div>
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Ramya</span> 👋
+            </h1>
+            <p class="hero-subtitle">
+              <span class="pixel-prefix">&gt; </span><span id="typewriterText">Aspiring Software Engineer & Full-Stack
+                Builder</span><span class="cursor">_</span>
+            </p>
+            <p class="hero-description">
+              Passionate Computer Science graduate with strong fundamentals in Data Structures, Algorithms, Web
+              Technologies, and Cloud concepts. Eager to solve real-world problems through clean code and scalable
+              applications.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fa-solid fa-folder-open"></i> View Projects
+              </a>
+              <a href="#chat" class="btn btn-accent">
+                <i class="fa-solid fa-robot"></i> Chat with My AI
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <i class="fa-solid fa-envelope"></i> Get In Touch
+              </a>
+            </div>
+
+            <!-- Quick highlights ribbon -->
+            <div class="hero-stats-ribbon">
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projects Built</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-number">300+</span>
+                <span class="stat-label">DSA Problems Solved</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-number">2025</span>
+                <span class="stat-label">Graduation Year</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-avatar-showcase">
+            <a href="resume.pdf" target="_blank" class="avatar-ring" title="Click to view Ramya's Resume PDF">
+              <img src="profile photo.jpeg" alt="Ramya Ramesh Portrait" class="hero-avatar-img"
+                onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80'" />
+            </a>
+            <div class="floating-tech-badge badge-1">
+              <i class="fa-brands fa-react"></i> React
+            </div>
+            <div class="floating-tech-badge badge-2">
+              <i class="fa-brands fa-python"></i> Python
+            </div>
+            <div class="floating-tech-badge badge-3">
+              <i class="fa-brands fa-java"></i> Java
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           4. ABOUT ME SECTION WITH PROFILE & BIO
+           ============================================== -->
+      <section id="about" class="content-section about-section">
+        <div class="section-header">
+          <span class="section-subtitle">// DISCOVER MY STORY</span>
+          <h2 class="section-title"><i class="fa-solid fa-user-astronaut"></i> About Me</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio-card glass-panel">
+            <h3 class="bio-heading">Who Am I?</h3>
+            <p class="bio-text">
+              I am <strong>Ramya Ramesh</strong>, an aspiring Software Engineer pursuing my <strong>Bachelor of Engineering in Information Science and Engineering</strong> at Adichunchanagiri Institute of Technology, Chikkamagaluru (VTU, Karnataka).
+            </p>
+            <p class="bio-text">
+              My technical focus spans <strong>Python</strong>, <strong>C/C++</strong>, <strong>Data Structures & Algorithms</strong>, <strong>Object-Oriented Programming (OOPs)</strong>, and <strong>Artificial Intelligence & Machine Learning fundamentals</strong>. I am enthusiastic about applying innovative problem-solving, building embedded and intelligent systems, and collaborating in team-driven engineering hackathons like the <strong>Smart India Hackathon (SIH)</strong>.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div>
+                  <h4>B.E. Information Science</h4>
+                  <p>Adichunchanagiri Institute of Technology (VTU)</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-trophy"></i></div>
+                <div>
+                  <h4>Smart India Hackathon (SIH)</h4>
+                  <p>National hackathon participant with team-based innovation</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-code"></i></div>
+                <div>
+                  <h4>Core Programming & OOPs</h4>
+                  <p>Strong foundations in Python, C, Data Structures & Algorithms</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-brain"></i></div>
+                <div>
+                  <h4>AI & Machine Learning</h4>
+                  <p>Exploring AI/ML fundamentals and intelligent smart systems</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-action-row">
+              <a href="resume.pdf" class="btn btn-primary" target="_blank">
+                <i class="fa-solid fa-file-pdf"></i> View Official Resume
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <i class="fa-solid fa-handshake"></i> Let's Connect
+              </a>
+            </div>
+          </div>
+
+          <div class="about-personal-card glass-panel">
+            <h3 class="bio-heading">Quick Facts & Contact</h3>
+            <ul class="personal-info-list">
+              <li>
+                <span class="info-key"><i class="fa-solid fa-user"></i> Full Name:</span>
+                <span class="info-val">Ramya Ramesh</span>
+              </li>
+              <li>
+                <span class="info-key"><i class="fa-solid fa-envelope"></i> Email:</span>
+                <span class="info-val"><a href="mailto:krramya212@gmail.com">krramya212@gmail.com</a></span>
+              </li>
+              <li>
+                <span class="info-key"><i class="fa-solid fa-phone"></i> Phone:</span>
+                <span class="info-val"><a href="tel:+919686031104">+91-9686031104</a></span>
+              </li>
+              <li>
+                <span class="info-key"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                <span class="info-val">Karnataka, India</span>
+              </li>
+              <li>
+                <span class="info-key"><i class="fa-solid fa-briefcase"></i> Academic Status:</span>
+                <span class="info-val">B.E. Information Science (2025–2029)</span>
+              </li>
+            </ul>
+
+            <div class="hobbies-wrapper">
+              <h4>Key Soft Skills:</h4>
+              <div class="hobby-tags">
+                <span class="hobby-tag"><i class="fa-solid fa-comments"></i> Communication</span>
+                <span class="hobby-tag"><i class="fa-solid fa-clock"></i> Time Management</span>
+                <span class="hobby-tag"><i class="fa-solid fa-people-group"></i> Teamwork & Collaboration</span>
+                <span class="hobby-tag"><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           5. SKILLS SECTION (Prompt 5)
+           ============================================== -->
+      <section id="skills" class="content-section skills-section">
+        <div class="section-header">
+          <span class="section-subtitle">// TECHNICAL EXPERTISE</span>
+          <h2 class="section-title"><i class="fa-solid fa-code"></i> Skills & Proficiencies</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="skills-category-grid">
+
+          <!-- Category 1: Core Programming Languages & OOPs -->
+          <!-- Represents foundational languages and problem-solving skills extracted from resume -->
+          <div class="skill-category-card glass-panel">
+            <div class="cat-header">
+              <i class="fa-solid fa-terminal cat-icon"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <p class="cat-desc">Core languages used for algorithmic problem solving and logic.</p>
+
+            <div class="skill-bars">
+              <!-- Python: Scripting, algorithms, data structures -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <!-- C Language: Memory management, pointers, low-level architecture -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-c"></i> C Programming</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <!-- Embedded C++: Microcontroller coding & Arduino systems -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-microchip"></i> C++ & Embedded C++</span>
+                  <span class="skill-pct">82%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 82%;"></div>
+                </div>
+              </div>
+
+              <!-- Data Structures & Algorithms: Searching, sorting, recursion -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-sitemap"></i> Data Structures & Algorithms</span>
+                  <span class="skill-pct">84%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 84%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: AI/ML & Embedded Smart Systems -->
+          <!-- Represents domain knowledge in AI/ML fundamentals and hardware sensor projects -->
+          <div class="skill-category-card glass-panel">
+            <div class="cat-header">
+              <i class="fa-solid fa-brain cat-icon"></i>
+              <h3>AI/ML & Smart Systems</h3>
+            </div>
+            <p class="cat-desc">Intelligent algorithms and sensor-driven automation.</p>
+
+            <div class="skill-bars">
+              <!-- AI/ML Fundamentals: Machine Learning concepts & neural models -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-robot"></i> AI & Machine Learning Basics</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+
+              <!-- Object-Oriented Programming: Encapsulation, inheritance, polymorphism -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-cubes"></i> OOPs Concepts</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <!-- Arduino IDE & Microcontrollers: Hardware sensor integration -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-gears"></i> Arduino IDE & Sensors</span>
+                  <span class="skill-pct">86%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 86%;"></div>
+                </div>
+              </div>
+
+              <!-- Smart Automation: Automated irrigation, ventilation, waste segregation -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-seedling"></i> Embedded Smart Automation</span>
+                  <span class="skill-pct">83%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 83%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Developer Tools & Web Technologies -->
+          <!-- Represents version control, developer tools, and complementary web skills -->
+          <div class="skill-category-card glass-panel">
+            <div class="cat-header">
+              <i class="fa-solid fa-screwdriver-wrench cat-icon"></i>
+              <h3>Tools & Web Basics</h3>
+            </div>
+            <p class="cat-desc">Version control, IDE environments, and web design basics.</p>
+
+            <div class="skill-bars">
+              <!-- Git & GitHub: Branching, commits, remote repositories -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                  <span class="skill-pct">92%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <!-- VS Code & Development Environment -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-laptop-code"></i> VS Code & Tooling</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <!-- HTML5 & Semantic CSS3 Web Layouts -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML5 & CSS3 Design</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <!-- Team Collaboration & Problem Solving in Hackathons -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-users-gear"></i> Agile Team Collaboration</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Complementary badges bar reflecting resume soft & technical competencies -->
+        <div class="skills-badges-bar glass-panel">
+          <span class="badge-title"><i class="fa-solid fa-cubes"></i> Core Competencies & Soft Skills:</span>
+          <div class="badge-tags-container">
+            <span class="tech-pill">Object-Oriented Programming (OOPs)</span>
+            <span class="tech-pill">Data Structures & Algorithms</span>
+            <span class="tech-pill">Artificial Intelligence Basics</span>
+            <span class="tech-pill">Embedded C++</span>
+            <span class="tech-pill">Smart Sensors & IoT</span>
+            <span class="tech-pill">Time Management</span>
+            <span class="tech-pill">Team Communication</span>
+            <span class="tech-pill">Smart India Hackathon</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           6. INTERACTIVE TIMELINE OF CAREER MILESTONES (Prompt 6)
+           ============================================== -->
+      <section id="timeline" class="content-section timeline-section">
+        <div class="section-header">
+          <span class="section-subtitle">// JOURNEY & MILESTONES</span>
+          <h2 class="section-title"><i class="fa-solid fa-timeline"></i> Education & Milestones Timeline</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="timeline-container">
+
+          <!-- Milestone 1: Bachelor of Engineering (B.E.) -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-date-badge">2025 - 2029 (Current)</div>
+              <h3 class="timeline-role">Bachelor of Engineering – Information Science & Engineering</h3>
+              <h4 class="timeline-org">Adichunchanagiri Institute of Technology, Chikkamagaluru (VTU, Karnataka)</h4>
+              <p class="timeline-text">
+                Pursuing comprehensive coursework in Information Science & Engineering, including Data Structures & Algorithms, Object-Oriented Programming (OOPs), Database Management Systems, and Artificial Intelligence & Machine Learning foundations.
+              </p>
+              <div class="timeline-tags">
+                <span class="mini-tag">Score: 74%</span>
+                <span class="mini-tag">B.E. ISE</span>
+                <span class="mini-tag">VTU Karnataka</span>
+                <span class="mini-tag">CS Fundamentals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 2: Smart India Hackathon (SIH) & Projects -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-date-badge">2024 - 2025</div>
+              <h3 class="timeline-role">Smart India Hackathon (SIH) – Participant</h3>
+              <h4 class="timeline-org">Ministry of Education & National Tech Innovation Platform</h4>
+              <p class="timeline-text">
+                Contributed to innovative problem-solving and rapid team-based software/embedded prototype development during the Smart India Hackathon. Designed real-world automation workflows including Greenhouse Monitoring and Smart Waste Segregation.
+              </p>
+              <div class="timeline-tags">
+                <span class="mini-tag">SIH National Event</span>
+                <span class="mini-tag">Embedded C++</span>
+                <span class="mini-tag">Arduino IDE</span>
+                <span class="mini-tag">Team Collaboration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3: Pre-University Course (PUC) -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-book-open-reader"></i>
+            </div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-date-badge">2023 - 2025</div>
+              <h3 class="timeline-role">Pre-University Course (PUC - Science)</h3>
+              <h4 class="timeline-org">Chanakya Pre-University College, Davanagere</h4>
+              <p class="timeline-text">
+                Completed higher secondary pre-university education with an emphasis on Physics, Chemistry, Mathematics, and Computer Science fundamentals with strong analytical reasoning.
+              </p>
+              <div class="timeline-tags">
+                <span class="mini-tag">Score: 75.16%</span>
+                <span class="mini-tag">PUC Science</span>
+                <span class="mini-tag">Davanagere</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 4: SSLC / 10th Standard -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-date-badge">2023</div>
+              <h3 class="timeline-role">Secondary School Leaving Certificate (SSLC / 10th)</h3>
+              <h4 class="timeline-org">Sri Basava International School, Channagiri (KSEB Board)</h4>
+              <p class="timeline-text">
+                Completed secondary school education under the Karnataka Secondary Education Examination Board (KSEB) with distinction in Mathematics and Science.
+              </p>
+              <div class="timeline-tags">
+                <span class="mini-tag">Score: 77.12%</span>
+                <span class="mini-tag">KSEB Board</span>
+                <span class="mini-tag">Distinction</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==============================================
+           7. PROJECTS SECTION WITH CLICKABLE THUMBNAILS & MODAL
+           ============================================== -->
+      <section id="projects" class="content-section projects-section">
+        <div class="section-header">
+          <span class="section-subtitle">// FEATURED CREATIONS</span>
+          <h2 class="section-title"><i class="fa-solid fa-laptop-code"></i> Featured Projects</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- ========================================================
+               PROJECT 1: Greenhouse Monitoring and Control System
+               Connected to projectsData[1] in script.js via data-project="1"
+               Features: Automated irrigation, soil moisture, temperature & humidity
+               ======================================================== -->
+          <article class="project-card glass-panel" data-project-id="1">
+            <!-- Clickable Thumbnail Container with consistent margin/padding and hover overlay -->
+            <div class="project-thumb-wrap">
+              <div class="project-pixel-banner banner-emerald">
+                <i class="fa-solid fa-seedling project-banner-icon"></i>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-accent open-project-btn" data-project="1" aria-label="View details for Greenhouse Monitoring and Control System">
+                  <i class="fa-solid fa-eye"></i> View Details
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-cat">EMBEDDED SYSTEMS & IOT</div>
+              <h3 class="project-title">Greenhouse Monitoring & Control System</h3>
+              <p class="project-desc">
+                Automated agricultural climate control system utilizing environmental sensors to monitor soil moisture, temperature, and humidity for optimized irrigation and ventilation.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Arduino IDE</span>
+                <span class="tech-pill">C++</span>
+                <span class="tech-pill">DHT11 / Soil Sensor</span>
+                <span class="tech-pill">Relay Automation</span>
+              </div>
+              <div class="project-links">
+                <!-- Button triggers openProjectModal(1) in script.js -->
+                <button class="project-link-btn open-project-btn" data-project="1">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/ramya-ise" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================
+               PROJECT 2: Smart Waste Segregation System
+               Connected to projectsData[2] in script.js via data-project="2"
+               Features: Automated wet/dry waste separation with sensors & microcontroller
+               ======================================================== -->
+          <article class="project-card glass-panel" data-project-id="2">
+            <!-- Clickable Thumbnail Container with consistent margin/padding and hover overlay -->
+            <div class="project-thumb-wrap">
+              <div class="project-pixel-banner banner-blue">
+                <i class="fa-solid fa-recycle project-banner-icon"></i>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-accent open-project-btn" data-project="2" aria-label="View details for Smart Waste Segregation System">
+                  <i class="fa-solid fa-eye"></i> View Details
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-cat">SMART AUTOMATION & SENSORS</div>
+              <h3 class="project-title">Smart Waste Segregation System</h3>
+              <p class="project-desc">
+                An intelligent waste management system that automatically classifies and segregates wet and dry refuse using inductive/moisture sensors and servo actuators.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Embedded C++</span>
+                <span class="tech-pill">Arduino IDE</span>
+                <span class="tech-pill">Ultrasonic & Moisture Sensors</span>
+                <span class="tech-pill">Servo Actuator</span>
+              </div>
+              <div class="project-links">
+                <!-- Button triggers openProjectModal(2) in script.js -->
+                <button class="project-link-btn open-project-btn" data-project="2">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/ramya-ise" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================
+               PROJECT 3: Python AI Crop Health & Yield Predictor
+               Connected to projectsData[3] in script.js via data-project="3"
+               Features: Machine learning model for soil parameter evaluation
+               ======================================================== -->
+          <article class="project-card glass-panel" data-project-id="3">
+            <!-- Clickable Thumbnail Container with consistent margin/padding and hover overlay -->
+            <div class="project-thumb-wrap">
+              <div class="project-pixel-banner banner-purple">
+                <i class="fa-solid fa-brain project-banner-icon"></i>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-accent open-project-btn" data-project="3" aria-label="View details for AI Crop Health & Yield Predictor">
+                  <i class="fa-solid fa-eye"></i> View Details
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-cat">AI & MACHINE LEARNING</div>
+              <h3 class="project-title">AI Crop Health & Soil Predictor</h3>
+              <p class="project-desc">
+                Machine learning classification model trained in Python to recommend optimal crops based on soil nutrient levels, humidity, temperature, and historical yield data.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Scikit-Learn</span>
+                <span class="tech-pill">NumPy / Pandas</span>
+                <span class="tech-pill">Data Structures</span>
+              </div>
+              <div class="project-links">
+                <!-- Button triggers openProjectModal(3) in script.js -->
+                <button class="project-link-btn open-project-btn" data-project="3">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/ramya-ise" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================
+               PROJECT 4: Smart IoT Energy & Power Optimization Hub
+               Connected to projectsData[4] in script.js via data-project="4"
+               Features: Live voltage/current monitoring and automated overload cutoff
+               ======================================================== -->
+          <article class="project-card glass-panel" data-project-id="4">
+            <!-- Clickable Thumbnail Container with consistent margin/padding and hover overlay -->
+            <div class="project-thumb-wrap">
+              <div class="project-pixel-banner banner-amber">
+                <i class="fa-solid fa-bolt project-banner-icon"></i>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-accent open-project-btn" data-project="4" aria-label="View details for Smart IoT Energy Monitor">
+                  <i class="fa-solid fa-eye"></i> View Details
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-cat">HARDWARE & EMBEDDED C</div>
+              <h3 class="project-title">Smart IoT Energy & Power Monitor</h3>
+              <p class="project-desc">
+                Microcontroller-based energy metering hub calculating real-time power dissipation, tracking device loads, and triggering protective safety relays upon surge detection.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">C / C++</span>
+                <span class="tech-pill">Current / Voltage Sensors</span>
+                <span class="tech-pill">Relay Control</span>
+                <span class="tech-pill">Microcontrollers</span>
+              </div>
+              <div class="project-links">
+                <!-- Button triggers openProjectModal(4) in script.js -->
+                <button class="project-link-btn open-project-btn" data-project="4">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/ramya-ise" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ==============================================
+           8. EMBEDDED VIDEO SECTION (INTRODUCTION & HIGHLIGHTS)
+           ============================================== -->
+      <section id="video-intro" class="content-section video-section">
+        <div class="section-header">
+          <span class="section-subtitle">// VIDEO SPOTLIGHT</span>
+          <h2 class="section-title"><i class="fa-solid fa-circle-play"></i> Video Introduction</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="video-container-card glass-panel">
+          <div class="pixel-corner tl"></div>
+          <div class="pixel-corner tr"></div>
+          <div class="pixel-corner bl"></div>
+          <div class="pixel-corner br"></div>
+
+          <div class="video-wrapper">
+            <!-- Uses local introduction video with fallback YouTube placeholder frame if needed -->
+            <video class="portfolio-video" controls poster="profile photo.jpeg" preload="metadata">
+              <source src="introduction video.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video tags.
+            </video>
+          </div>
+
+          <div class="video-caption-bar">
+            <div class="caption-icon"><i class="fa-solid fa-video"></i></div>
+            <div class="caption-content">
+              <h4>Meet Ramya Ramesh – Elevator Pitch & Engineering Vision</h4>
+              <p>A brief 60-second introduction walking through my academic background in Information Science & Engineering, passion for smart IoT systems, problem-solving, and career goals.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           9. TESTIMONIALS & ENDORSEMENTS SECTION (Prompt 9)
+           ============================================== -->
+      <section id="testimonials" class="content-section testimonials-section">
+        <div class="section-header">
+          <span class="section-subtitle">// RECOMMENDATIONS & FEEDBACK</span>
+          <h2 class="section-title"><i class="fa-solid fa-comments"></i> Testimonials & Feedback</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <!-- Testimonial 1: Project Mentor & Hackathon Guide -->
+          <div class="testimonial-card glass-panel">
+            <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="quote-text">
+              "Ramya displayed outstanding problem-solving dedication during our Smart India Hackathon preparation. Her ability to interface hardware sensors with clean C++ logic under tight deadlines was truly remarkable."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-chalkboard-user"></i></div>
+              <div class="author-info">
+                <h4>Prof. M. Venkatesh</h4>
+                <p>Project Guide & Innovation Mentor</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2: Engineering Peer & Hackathon Teammate -->
+          <div class="testimonial-card glass-panel">
+            <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="quote-text">
+              "Collaborating with Ramya on the Greenhouse Automation and Smart Waste Segregation systems was seamless. She took full charge of microcontroller sensor calibration, ensuring our prototype worked reliably."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+              <div class="author-info">
+                <h4>Pooja Gowda</h4>
+                <p>Engineering Peer & Hackathon Teammate</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3: Academic Professor -->
+          <div class="testimonial-card glass-panel">
+            <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="quote-text">
+              "Ramya consistently demonstrates strong conceptual clarity in Data Structures, Object-Oriented Programming, and Python. Her analytical mindset and proactive approach to learning set her apart."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-user-tie"></i></div>
+              <div class="author-info">
+                <h4>Dr. K. S. Raghu</h4>
+                <p>Professor, Dept. of Information Science & Engg.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==============================================
+           10. AI CHAT INTERFACE INTEGRATION
+           ============================================== -->
+      <section id="chat" class="content-section chat-section">
+        <div class="section-header">
+          <span class="section-subtitle">// INTERACTIVE ASSISTANT</span>
+          <h2 class="section-title"><i class="fa-solid fa-robot"></i> AI Chat with RamyaBot</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="chat-wrapper glass-panel">
+          <div class="chat-header">
+            <div class="chat-bot-info">
+              <div class="bot-status-avatar">
+                <i class="fa-solid fa-robot"></i>
+                <span class="online-dot"></span>
+              </div>
+              <div>
+                <h3 class="bot-name">Ramya AI Assistant</h3>
+                <p class="bot-status-text">Online | Ask me about skills, projects & resume</p>
+              </div>
+            </div>
+            <div class="chat-controls">
+              <button class="chat-control-btn" id="clearChatBtn" title="Clear chat history">
+                <i class="fa-solid fa-rotate-right"></i> Reset
+              </button>
+            </div>
+          </div>
+
+          <!-- Chat Conversation Log -->
+          <div class="chat-messages-container" id="chatMessages" role="log" aria-live="polite">
+            <div class="chat-msg bot-msg">
+              <div class="msg-avatar"><i class="fa-solid fa-robot"></i></div>
+              <div class="msg-bubble">
+                <p>Hello! 👋 I'm Ramya's AI Assistant. How can I help you today?</p>
+                <div class="quick-prompts">
+                  <button class="quick-btn" data-query="What are your core technical skills?">🛠️ Core Skills</button>
+                  <button class="quick-btn" data-query="Tell me about your best projects">🚀 Best Projects</button>
+                  <button class="quick-btn" data-query="How can I contact Ramya?">📬 Contact Info</button>
+                  <button class="quick-btn" data-query="Can I download your resume?">📄 Resume</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chat Input Bar -->
+          <!-- NOTE: To connect a live backend LLM like OpenAI or Google Gemini API,
+               replace the local simulateAiResponse() logic in script.js with a fetch('/api/chat') call. -->
+          <form class="chat-input-form" id="chatForm">
+            <input type="text" id="chatInput" class="chat-input"
+              placeholder="Ask anything about Pallavi's background, skills, or projects..." autocomplete="off"
+              required />
+            <button type="submit" class="chat-send-btn" id="chatSendBtn" aria-label="Send message">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           11. CONTACT FORM WITH EMAIL API FUNCTIONALITY
+           ============================================== -->
+      <section id="contact" class="content-section contact-section">
+        <div class="section-header">
+          <span class="section-subtitle">// REACH OUT DIRECTLY</span>
+          <h2 class="section-title"><i class="fa-solid fa-paper-plane"></i> Contact Me</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Info Left Column -->
+          <div class="contact-info-card glass-panel">
+            <h3>Let's Build Something Great Together</h3>
+            <p>I am actively seeking full-time opportunities, internships, and collaborative software projects. Feel
+              free to send a message or connect through my socials!</p>
+
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="method-label">Email</span>
+                  <a href="mailto:krramya212@gmail.com" class="method-val">krramya212@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="method-label">Phone</span>
+                  <a href="tel:+919686031104" class="method-val">+91 96860 31104</a>
+                </div>
+              </div>
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="method-label">Location</span>
+                  <span class="method-val">Karnataka, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="availability-box">
+              <div class="availability-status">
+                <span class="pulse-dot"></span>
+                <strong>Status:</strong> Available for Projects & Internships
+              </div>
+              <p>Ready to join innovative engineering teams and contribute effectively.</p>
+            </div>
+          </div>
+
+          <!-- Contact Form Right Column -->
+          <!-- NOTE: Backend Email integration (such as Resend API, Formspree, or EmailJS)
+               can be configured inside handleContactSubmit() in script.js -->
+          <div class="contact-form-card glass-panel">
+            <form id="contactForm" class="contact-form" novalidate>
+
+              <div class="form-group">
+                <label for="userName" class="form-label">Your Name <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="userName" name="name" class="form-input" placeholder="e.g. John Doe"
+                    required />
+                </div>
+                <span class="error-msg" id="nameError">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="userEmail" class="form-label">Your Email <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" id="userEmail" name="email" class="form-input" placeholder="e.g. john@example.com"
+                    required />
+                </div>
+                <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="userSubject" class="form-label">Subject</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-heading"></i>
+                  <input type="text" id="userSubject" name="subject" class="form-input"
+                    placeholder="Opportunity / Collaboration" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage" class="form-label">Your Message <span class="required">*</span></label>
+                <textarea id="userMessage" name="message" class="form-textarea" rows="4"
+                  placeholder="Hello Ramya, I would like to discuss..." required></textarea>
+                <span class="error-msg" id="messageError">Please enter a message.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+                <span class="btn-spinner" aria-hidden="true"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+              </button>
+
+              <div class="form-feedback" id="formFeedback" role="alert"></div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==============================================
+           12. SOCIAL MEDIA LINKS & FOOTER
+           ============================================== -->
+      <footer class="portfolio-footer glass-panel">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="pixel-logo">👾 RAMYA.DEV</span>
+            <p>Crafted with clean code, passion & modern web technologies.</p>
+          </div>
+
+          <!-- Social media icons adhering to pixel/glass aesthetic with ARIA labels -->
+          <div class="footer-social-links" aria-label="Social Media Links">
+            <a href="https://github.com/ramya-ise" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="GitHub Profile" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ramya-k-r-91388239a" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="LinkedIn Profile" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:krramya212@gmail.com" class="social-icon" aria-label="Email Ramya" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <div class="footer-bottom">
+            <p>© 2025 Ramya Ramesh. All Rights Reserved.</p>
+            <p class="footer-tagline">Built for Engineering Excellence & Smart Innovation.</p>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-card glass-panel">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-header">
+        <span class="modal-cat" id="modalCategory">CATEGORY</span>
+        <h2 class="modal-title" id="modalTitle">Project Title</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-pixel-banner" id="modalBanner">
+          <i class="fa-solid fa-laptop-code" id="modalBannerIcon"></i>
+        </div>
+        <div class="modal-description" id="modalDescription">
+          Project detailed information and highlights will appear here.
+        </div>
+        <div class="modal-key-features">
+          <h4>Key Features & Architecture:</h4>
+          <ul id="modalFeaturesList"></ul>
+        </div>
+        <div class="modal-tech-stack" id="modalTechStack"></div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline"
+          id="modalGithubLink">
+          <i class="fa-brands fa-github"></i> Source Code
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modalDemoLink">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</html>
